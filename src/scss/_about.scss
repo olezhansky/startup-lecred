@@ -1,0 +1,38 @@
+.about {
+    min-height: 200px;
+    background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(0, 0, 0, 0.1) 100%
+    ),
+    url(../img/about-bg.jpg);
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    &__inner {
+        padding: 30px 20px;
+    }
+    &__content {
+        max-width: 900px;  
+        margin: 0 auto;
+    }
+    &__title {
+        color: #00002c;
+    }
+    &__text {
+        font-size: 22px;
+        line-height: 28px;
+        color: #fff; 
+        letter-spacing: 2px;
+        padding: 25px 15px; 
+        text-align: justify;
+    }
+    &__text span:first-child {
+        font-size: 28px;
+    }
+    &__text span {
+        font-weight: 700;
+    }
+}

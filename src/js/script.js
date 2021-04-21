@@ -1,0 +1,6 @@
+@@include('_slick.js')
+@@include('_jquery.fancybox.js')
+@@include('_slider.js')
+@@include('_buttonTop.js')
+@@include('_fixedMenu.js')
+@@include('_activeMenu.js')

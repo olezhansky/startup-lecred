@@ -1,0 +1,287 @@
+.header {
+    &__top {
+        padding: 5px 0;
+        background-color: $main-color; 
+      
+    }
+    &__top-inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__contacts {
+        align-self: center;
+        position: relative;
+        font-size: 14px;
+        letter-spacing: 1px;
+        margin-left: 20px;
+    }
+    &__phone {
+        margin: 0 25px 0 10px;
+        padding-left: 10px;
+        color: #fff;
+        z-index: 5;
+    }
+    &__phone:before {
+        position: absolute;
+        content: "\e942";
+        font-size: 16px;
+        font-family: 'icomoon';
+        color: $third-color;
+        top: -1px;
+        left: 0px;
+        z-index: 5;
+    }
+    &__phone:hover:before {
+        content: "\e907";
+        font-size: 20px;
+    }
+    &__phone-menu {
+        display: inline-block;
+        position: relative;
+    }
+    &__phone-top {
+        position: absolute;
+        display: none;
+        width: 130px;
+        top: -18px;
+        left: 20px;
+    }
+    &__phone-bottom {
+        position: absolute;
+        display: none;
+        width: 130px;
+        top: 18px;
+        left: 20px;
+    }
+    &__phone-top a,
+    &__phone-bottom a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        letter-spacing: 1px;
+    }
+    &__phone-menu:hover .header__phone-top,
+    &__phone-menu:hover .header__phone-bottom {
+        display: inline-block;
+    }
+    &__phone-menu:hover .header__phone-top a {
+        color: #fff;
+    }
+    &__facebook {
+        position: relative;
+        display: inline-block;
+        margin-right: 20px;
+        padding-right: 5px;
+    }
+    &__facebook:before {
+        position: absolute;
+        content: "\ea91";
+        font-size: 20px;
+        font-family: 'icomoon';
+        color: #fff;
+        top: -14px;
+        left: 0;  
+    }
+    &__instagram {
+        position: relative;
+        display: inline-block;
+        margin-right: 20px;
+        padding-right: 5px;
+    }
+    &__instagram:before {
+        position: absolute;
+        content: "\ea92";
+        font-size: 20px;
+        font-family: 'icomoon';
+        color: #fff;
+        top: -13px;
+        left: 0;  
+    }
+    &__telegram {
+        position: relative;
+        display: inline-block;
+        margin-right: 20px;
+    }
+    &__telegram:before {
+        position: absolute;
+        content: "\e902";
+        font-size: 20px;
+        font-family: 'icomoon';
+        color: #fff;
+        top: -13px;
+        left: 0;  
+    }
+    &__facebook:hover:before,
+    &__instagram:hover:before,
+    &__telegram:hover:before  {
+        color: $third-color; 
+    }
+    &__email  {
+        margin: 0 0px 0 25px;  
+        padding-left: 25px;
+        color: #fff;
+        position: relative;
+    }
+    &__email:after {
+        position: absolute;
+        content: "\e906";
+        font-size: 16px;
+        font-family: 'icomoon';
+        color: $third-color;
+        top: -1px;
+        left: 0;  
+    }
+    &__email:hover:after {
+        content: "\e905";
+        top: -2px;
+    }
+    &__btn {
+        padding: 5px 15px;
+        font-weight: 700; 
+    }
+    &__btn span {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        font-family: 'Roboto', sans-serif;
+    }
+    &__menu {
+        background-color: #fff;
+        background-color: grey;
+        z-index: 60;
+        width: 100%;
+    }
+    &__menu-inner {
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+.menu__networks a {
+    display: none;
+}
+.menu__top {
+    line-height: 50px;
+}
+.menu__top-item {
+    display: inline-block;
+    padding-right: 30px;
+}
+.menu__top-item:last-child {
+    padding-right: none;
+}
+.menu__top-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'Roboto', sans-serif;
+    transition: all .3s;
+    text-transform: uppercase;
+    background: linear-gradient(to right, $main-color, $main-color 50%, #fff 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    position: relative;
+    letter-spacing: 1.5px;
+}
+.menu__top-link:hover {
+    background-position: 0 100%;
+    transition: all 0.3s;
+}
+.menu__top-link.menu__top-link--active {
+    background-position: 0 100%;
+    transition: all 0.3s;
+}
+.menu__top-link:after {
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: $main-color;
+    content: "";
+    transition: width 0.3s;
+}
+.menu__top-link:hover:after {
+    width: 100%;
+}
+.menu__top-link.menu__top-link--active:after {
+    width: 100%;
+}
+.menu__top-link.menu__top-link--selected:after {
+    width: 100%;
+}
+.menu__top-link.menu__top-link--selected {
+    background-position: 0 100%;
+    transition: all 0.3s;
+}
+.menu__list {
+    position: relative;
+}
+.menu__drop {
+    width: 450px;
+    position: absolute;
+    z-index: 500;
+    text-align: left;
+    opacity: 0;
+    left: -300px;
+	top: -1000px;
+    transition: 0.5s opacity;
+    border-top: 20px solid transparent;
+}
+.menu__drop li {
+    display: block;
+    background-color: #fff;
+    border-bottom: 2px solid $third-color;
+    padding-left: 20px;
+    transition: 0.3s;
+}
+.menu__drop li:hover {
+    padding-left: 40px;
+}
+.menu__drop li:last-child {
+    border-bottom: none;
+}
+.menu__drop-link {
+    color: $main-color;
+    font-weight: 700;
+}
+.menu__list:hover .menu__drop {
+    opacity: 1;
+    top: 35px;
+}
+
+.menu__list:hover .menu__top-link {
+    background-position: 0 100%;
+    transition: all 0.3s;
+}
+.menu__list:hover .menu__top-link:after {
+    width: 100%;
+}
+.menu__list:hover .menu__list:after {
+    color: red;
+}
+.menu__list::after {
+	content: '';
+	position: absolute;
+	border: 5px solid;
+	border-color:  transparent  transparent transparent #eee;
+	top: 18px;
+	left: 125px;
+	transition: 0.5s;
+}
+// .menu__list:hover::after{
+// 	transform: rotate(90deg)
+// }
+
+.menu__list:hover::after{
+    transform: rotate(90deg);
+    border-color:  transparent  transparent transparent $main-color;
+}
+
+
+
+
+

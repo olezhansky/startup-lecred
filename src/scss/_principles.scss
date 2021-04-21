@@ -1,0 +1,49 @@
+.principles {
+    background-image: url(../img/principles-bg.jpg);
+    min-height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    &__inner {
+        padding: 30px 0px 60px;
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-column-gap: 40px;
+        margin-top: 25px;
+    }
+    &__item {
+        border-radius: 5px;
+        max-width: 340px;
+        min-height: 100px;
+        border-radius: 3px;
+        padding: 40px 15px;
+        background-color: $main-color;
+        position: relative;
+        border-bottom: 7px solid #fff;
+    }
+    &__item:after {
+        position: absolute;
+        content: "\ea10";
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 34px;
+        padding: 25px 0;
+        color: #fff;
+        font-family: 'icomoon';
+    }
+    &__item:hover:after {
+       font-size: 54px; 
+    }
+    &__item-text {
+        font-size: 20px;
+        line-height: 26px;
+        text-align: center;
+        color: #fff;
+        padding-top: 25px;
+        letter-spacing: 1px;
+    }
+ }

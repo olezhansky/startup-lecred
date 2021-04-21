@@ -1,0 +1,96 @@
+.form {
+    min-height: 500px;
+    padding: 50px 0 20px; 
+    background: rgb(76,76,80);
+    background-color: grey;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__title-box {
+        text-align: center;
+    }
+    &__title {
+        font-size: 32px;
+        line-height: 36px;
+        color: $main-color;
+        font-weight: 700;
+        text-transform: uppercase;  
+    }
+    &__text {
+        font-size: 24px;
+        line-height: 30px;
+        color: $main-color;
+    }
+    &__box {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    &__box-inner {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-column-gap: 100px;
+        grid-row-gap: 30px;
+        justify-items: center;
+        padding-bottom: 30px;
+    }
+    &__box-inner label,
+    &__box-inner input,
+    &__box-inner textarea {
+        display: block;
+        width: 350px;
+        height: 40px;
+        padding: 10px 15px;
+        margin-bottom: 30px;
+        color: $main-color;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+        outline: none; 
+    }
+    &__box-inner textarea { 
+        resize: none; 
+        height: 85px;
+    }
+    &__box-inner input {
+        border: none;
+    }
+    &__box-inner input:focus,
+    &__box-inner textarea:focus{
+        box-shadow: 0px 0px 3px 4px rgba(0, 0, 44, 0.5);
+    }
+    &__btn {
+        margin: 95px 0 0 15px;
+    }
+    &__btn button {
+        background-color: $main-color;
+        padding: 10px 15px;
+        font-size: 16px;
+        line-height: 24px;
+        outline: none;
+        font-weight: 400;
+        border: none;
+        cursor: pointer;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 1px;  
+        border-radius: 10px;  
+        transition: 0.3s;
+        box-shadow: 5px 5px 0px 0px rgba(0, 0, 44, 1);
+        border: 1px solid #fff;
+        font-weight: 700;
+    }
+    &__btn button:hover {
+       background-color: $third-color;
+       color: rgba(0, 0, 44, 1);
+       font-weight: 700;
+    }
+    &__btn button:active {
+        transform: translate(5px, 5px);
+        box-shadow: none;
+    }
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}

@@ -1,0 +1,130 @@
+.contacts {
+    background-color: #00002c;
+    &__inner {
+        padding: 40px 0;
+    }
+    &__items {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-column-gap: 20px;
+        justify-items: center;
+    }
+}
+.contact {
+    &__item {
+        padding: 20px 15px;
+        width: 250px;
+        text-align: center;
+        min-height: 180px;
+        border-radius: 20%;
+        background-color: $main-color;  
+        border-bottom: 2px solid #fff;
+        border-top: 2px solid #fff;
+        cursor: pointer;
+    }
+    &__item:hover {
+        border: 2px solid #fff;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    }
+    &__item--map {
+        position: relative;
+    }
+    &__item--map:before {
+        position: absolute;
+        content: "\e901";
+        font-size: 30px;
+        font-family: 'icomoon';
+        color: #fff;
+        top: 35px;
+        left: 50%;
+        transform: translateX(-50%);  
+    }
+    &__item--map:hover:before {
+        font-size: 40px;  
+    }
+    &__item--email {
+        position: relative;
+    }
+    &__item--email:before {
+        position: absolute;
+        content: "\e906";
+        font-size: 30px;
+        font-family: 'icomoon';
+        color: #fff;
+        top: 35px;
+        left: 50%;
+        transform: translateX(-50%);  
+    }
+    &__item--email:hover:before {
+        position: absolute;
+        content: "\e905";
+        font-size: 30px;
+        font-family: 'icomoon';
+        color: #fff;
+        top: 33px;
+        left: 50%;
+        transform: translateX(-50%);  
+    }
+    &__item--phone {
+        position: relative;
+    }
+    &__description li {
+        margin-bottom: 5px;
+        letter-spacing: 2px;
+        color: #fff;
+    }
+    &__description li:last-child {
+        margin-bottom: 0px;
+    }
+    &__item--phone:before {
+        position: absolute;
+        content: "\e942";
+        font-size: 30px;
+        font-family: 'icomoon';
+        color: #fff;
+        top: 35px;
+        left: 50%;
+        transform: translateX(-50%);  
+    }
+    &__item--phone:hover:before {
+        position: absolute;
+        content: "\e907";
+        font-size: 30px;
+        font-family: 'icomoon';
+        color: #fff;
+        top: 35px;
+        left: 50%;
+        transform: translateX(-50%); 
+    }
+    &__name {
+        font-size: 22px;
+        line-height: 28px;
+        padding: 50px 0 5px;
+        color: #fff;
+        letter-spacing: 1px;
+        text-decoration: underline;
+    }
+    &__description {
+        font-size: 18px;
+        line-height: 24px;
+        color: #fff;
+    }
+}
+.networks__title {
+    margin-top: 50px;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.networks__items {
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+    margin: 0 auto;
+}

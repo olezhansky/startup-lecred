@@ -1,0 +1,151 @@
+#modal {
+    display: none;
+    width: 400px;
+}
+#modal input {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 50px;
+    border: 1px solid $main-color;
+    padding: 0 10px;
+    outline-color:  $third-color; 
+    letter-spacing: 1px; 
+}
+#modal input[type="submit"] {
+    background-color: $main-color;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+}
+#modal input[type="submit"]:hover {
+    background-color: $third-color;
+    color: #fff;
+}
+#modal label {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    color: $main-color;
+}
+#modal__services-1,
+#modal__services-2,
+#modal__services-3,
+#modal__services-4,
+#modal__services-5,
+#modal__services-6,
+#modal__services-7,
+#modal__services-8 {
+  display: none;  
+  width: 60%;
+  min-height: 50%;
+  background-color: #fff;
+  z-index: 100;
+}
+#modal__services-1 h2,
+#modal__services-2 h2,
+#modal__services-3 h2,
+#modal__services-4 h2,
+#modal__services-5 h2,
+#modal__services-6 h2,
+#modal__services-7 h2,
+#modal__services-8 h2 {
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: $main-color;
+}
+#modal__services-1 h3,
+#modal__services-2 h3,
+#modal__services-3 h3,
+#modal__services-4 h3,
+#modal__services-5 h3,
+#modal__services-6 h3,
+#modal__services-7 h3,
+#modal__services-8 h3 {
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    color: $main-color;
+}
+.modal__services-text-1 p,
+.modal__services-text-2 p,
+.modal__services-text-3 p,
+.modal__services-text-4 p,
+.modal__services-text-5 p,
+.modal__services-text-6 p,
+.modal__services-text-7 p,
+.modal__services-text-8 p {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 8px;
+    padding-left: 30px;
+    position: relative;
+}
+.modal__services-text-1 p:after,
+.modal__services-text-2 p:after,
+.modal__services-text-3 p:after,
+.modal__services-text-4 p:after,
+.modal__services-text-5 p:after,
+.modal__services-text-6 p:after,
+.modal__services-text-7 p:after,
+.modal__services-text-8 p:after {
+    position: absolute;
+    font-family: 'icomoon';
+    content: "\ea10";
+    color: $main-color;
+    top: 2px;
+    left: 0;
+}
+.modal__services-text-1 p:last-child,
+.modal__services-text-2 p:last-child,
+.modal__services-text-3 p:last-child,
+.modal__services-text-4 p:last-child,
+.modal__services-text-5 p:last-child,
+.modal__services-text-6 p:last-child,
+.modal__services-text-7 p:last-child,
+.modal__services-text-8 p:last-child {
+    margin-bottom: 0;
+}
+.modal__services-btn-1,
+.modal__services-btn-2,
+.modal__services-btn-3, 
+.modal__services-btn-4, 
+.modal__services-btn-5, 
+.modal__services-btn-6, 
+.modal__services-btn-7, 
+.modal__services-btn-8 {
+  margin-top: 20px;  
+}
+.modal__services-btn-1 a,
+.modal__services-btn-2 a,
+.modal__services-btn-3 a,
+.modal__services-btn-4 a,
+.modal__services-btn-5 a,
+.modal__services-btn-6 a,
+.modal__services-btn-7 a,
+.modal__services-btn-8 a {
+    background-color: $main-color;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+}
+.modal__services-btn-1 a:hover,
+.modal__services-btn-2 a:hover, 
+.modal__services-btn-3 a:hover, 
+.modal__services-btn-4 a:hover,  
+.modal__services-btn-5 a:hover,
+.modal__services-btn-6 a:hover, 
+.modal__services-btn-7 a:hover, 
+.modal__services-btn-8 a:hover {
+    background-color: $third-color
+}
+.fancybox-button svg {
+    color: $third-color;
+}

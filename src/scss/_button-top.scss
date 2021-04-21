@@ -1,0 +1,22 @@
+.scroll__button-top {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    font-size: 26px;
+    font-weight: 700;
+    background-color: grey;
+    box-shadow: 0px 0px 10px 10px $third-color;
+    cursor: pointer;
+    text-align: center;
+    display: none;
+    z-index: 50;
+    .fa-long-arrow-alt-up {
+        color: #fff;
+        font-size: 25px;
+    }
+}

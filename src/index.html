@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=">Юридическая компания Лекред - занимается юридическим сопровождением и защитой прав и интересов физических и юридических лиц. Сфера наших услуг: судебная практика, корпоративное право, земельное право, трудовое право, банковское право, контрактное право, семейное право, абонентское обслуживание">
+    <!-- <meta name="robots" content="none"> -->
+    <meta name="Author" content="Olezhansky">
+    <meta name="Copyright" content="Olezhansky">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Roboto:400,500&display=swap&subset=cyrillic"
+    rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Юридическая компания Лекред</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    @@include('_header.html')
+    @@include('_slider.html')
+    @@include('_about.html')
+    @@include('_principles.html')
+    @@include('_services.html')
+    @@include('_why.html')
+    @@include('_contacts.html')
+    @@include('_form.html')
+   
+    @@include('_footer.html')
+
+    <div id="modal">
+        <form action="">
+    
+          <!-- Hidden Required Fields -->
+          <input type="hidden" name="project_name" value="Lecred">
+          <input type="hidden" name="admin_email" value="lecred.ua@gmail.com">
+          <input type="hidden" name="form_subject" value="application">
+          <!-- END Hidden Required Fields -->
+    
+          
+          <label>
+            ФИО
+            <input name="Name" type="text" placeholder="">
+          </label>
+          <label>
+            Ваш телефон
+            <input name="E-mail" type="text" placeholder="">
+            </label>
+          <label>
+            Опишите Вашу проблему
+            <input name="Description" type="text" placeholder="">
+          </label>
+          <input type="submit" value="Отправить">
+        </form>
+      </div>
+      
+      <div class="button__top">
+        <button class="scroll__button-top" id="scroll__button-top">&#8657;</button>
+      </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

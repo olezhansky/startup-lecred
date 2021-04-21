@@ -1,0 +1,93 @@
+@import '_reset.scss';
+@import '_var.scss';
+@import '_fonts.scss';
+@import '_slick.scss';
+
+
+
+// General styles
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*, 
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $primary-font;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul,
+li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.title {
+    font-size: 32px;
+    line-height: 36px;
+    color: #fff; 
+    font-weight: 700; 
+    text-align: center;
+    letter-spacing: 2px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 75px;
+        left: 44%;
+        width: 120px;
+        height: 3px;
+        background-color: #4973ff;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 85px;
+        left: 46%;
+        width: 120px;
+        height: 3px;
+        background-color: #4973ff;
+    }
+}
+
+
+
+@import 'button-animation.scss';
+@import '_header.scss';
+@import '_slider.scss';
+@import '_about.scss';
+@import '_principles.scss';
+@import '_services.scss';
+@import '_contacts.scss';
+@import '_form.scss';
+@import '_why.scss';
+@import '_footer.scss';
+@import 'button-top.scss';
+@import '_modal.scss';
+@import '_jquery.fancybox.scss';
