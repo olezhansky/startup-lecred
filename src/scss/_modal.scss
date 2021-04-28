@@ -49,11 +49,13 @@
 #modal__services-6 h2,
 #modal__services-7 h2,
 #modal__services-8 h2 {
+    text-align: center;
     font-size: 36px;
     line-height: 40px;
     font-weight: 700;
     letter-spacing: 1px;
     color: $main-color;
+    margin-bottom: 15px;
 }
 #modal__services-1 h3,
 #modal__services-2 h3,
@@ -63,11 +65,12 @@
 #modal__services-6 h3,
 #modal__services-7 h3,
 #modal__services-8 h3 {
-    font-size: 26px;
+    font-size: 22px;
     line-height: 30px;
     letter-spacing: 0.5px;
     font-weight: 500;
     color: $main-color;
+    margin-bottom: 15px;
 }
 .modal__services-text-1 p,
 .modal__services-text-2 p,

@@ -1,0 +1,103 @@
+.header__select-wrapper {
+    width: 80px;
+    height: 35px;
+    margin-left: 15px;
+    display: inline-block;
+    right: 10px;
+    top: 0px;
+  }
+  
+  .header__select-wrapper .header__select {
+    position: relative;
+  }
+  
+  .header__select-wrapper .header__select select {
+    display: block;
+    width: 100px;
+    color: #fff;
+    background: none;
+    padding: 10px 20px 10px 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: inherit;
+    font-size: 14px;
+    position: relative;
+  }
+  
+  .header__select-wrapper .header__select select option {
+    background: none;
+  }
+  
+  .header__select-wrapper .header__select select:focus {
+    outline: none;
+  }
+  
+  .header__select-wrapper .header__select::after {
+    content: "";
+    display: block;
+    border-style: solid;
+    border-width: 6px 5px 0 5px;
+    border-color: #e7e7e7 transparent transparent transparent;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    z-index: 1;
+    margin-top: -3px;
+    pointer-events: none;
+  }
+  
+  .header__select-wrapper .dropdown-btn {
+    width: 100%;
+    background: none;
+    // border: 1px solid #e7e7e7;
+    border: 2px solid blue;
+    border-radius: 16px;
+    color: #fff;
+    padding: 5px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .header__select-wrapper .dropdown-btn:focus {
+    outline: none;
+    background: #4d4d4d;
+    -webkit-box-shadow: 2px 0 2px rgba(0, 0, 0, 0.609);
+    box-shadow: 2px 0 2px rgba(0, 0, 0, 0.609);
+  }
+  
+  .header__select-wrapper .dropdown__list {
+    display: none;
+    position: absolute;
+    left: 11px;
+    top: 38px;
+    width: 80px;
+    border: 1px solid white;
+    border-radius: 4px;
+    -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.596);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.596);
+    color: #fff;
+    line-height: 25px;
+    overflow: hidden;
+    z-index: 2;
+  }
+  
+  .header__select-wrapper .dropdown__list:last-child {
+    border-bottom: 0;
+  }
+  
+  .header__select-wrapper .dropdown__list.show {
+    display: block;
+  }
+  
+  .header__select-wrapper .dropdown__list-item {
+    min-height: 30px;
+    background: #000;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+  }
+  
+  .header__select-wrapper .dropdown__list-item:hover {
+    background: #242424;
+  }

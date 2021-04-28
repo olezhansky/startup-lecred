@@ -2,6 +2,8 @@
     &__top {
         padding: 5px 0;
         background-color: $main-color; 
+        position: relative;
+        z-index: 50;
       
     }
     &__top-inner {
@@ -148,7 +150,7 @@
     }
     &__menu {
         background-color: #fff;
-        background-color: grey;
+        background-color: $second-color;
         z-index: 60;
         width: 100%;
     }
@@ -156,13 +158,53 @@
         text-align: center;
         margin: 0 auto;
     }
+    &__menu-burger {
+        display: none;
+        cursor: pointer;
+        right: 20px;
+        z-index: 60;
+        overflow: hidden;
+        position: absolute;
+        top: 37px;
+        &-line {
+            border-radius: 5px;
+            transition: all 0.4s;
+            height: 3px;
+            width: 26px;
+            background-color: #fff;
+            display: block;
+            margin-bottom: 6px;
+            z-index: 5;
+        }
+        &-line:last-child {
+            margin-bottom: 0px;  
+        }
+        .first {
+            transform: translate(0px, -1px) rotate(45deg);
+            transform-origin: left bottom;
+        }
+        .middle {
+            transform: scale(0);
+        }
+        .last {
+            transform: translate(0px, 0px)rotate(-45deg);
+            transform-origin: left top;
+            z-index: 5;
+
+        }
+    }
 }
-.menu__networks a {
+.menu__networks {
     display: none;
 }
 .menu__top {
     line-height: 50px;
 }
+// .menu .menu__top--active {
+//     opacity: 1;
+//     visibility: visible;
+//     transform: translateX(0px);
+// }
 .menu__top-item {
     display: inline-block;
     padding-right: 30px;
@@ -172,7 +214,7 @@
 }
 .menu__top-link {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 24px;
     font-family: 'Roboto', sans-serif;
     transition: all .3s;
@@ -217,7 +259,7 @@
     background-position: 0 100%;
     transition: all 0.3s;
 }
-.menu__list {
+.menu__top-item--list {
     position: relative;
 }
 .menu__drop {
@@ -226,9 +268,10 @@
     z-index: 500;
     text-align: left;
     opacity: 0;
+    visibility: hidden;
     left: -300px;
-	top: -1000px;
-    transition: 0.5s opacity;
+	top: 35px;
+    transition: all 0.5s;
     border-top: 20px solid transparent;
 }
 .menu__drop li {
@@ -247,36 +290,37 @@
 .menu__drop-link {
     color: $main-color;
     font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
 }
-.menu__list:hover .menu__drop {
+.menu__top-item--list:hover .menu__drop {
+    transition: transform .5s ease-in;
+    transition: all .5s;
     opacity: 1;
-    top: 35px;
+    visibility: visible;
 }
 
-.menu__list:hover .menu__top-link {
+.menu__top-item--list:hover .menu__top-link {
     background-position: 0 100%;
     transition: all 0.3s;
 }
-.menu__list:hover .menu__top-link:after {
+.menu__top-item--list:hover .menu__top-link:after {
     width: 100%;
 }
-.menu__list:hover .menu__list:after {
+.menu__top-item--list:hover .menu__list:after {
     color: red;
 }
-.menu__list::after {
+.menu__top-item--list::after {
 	content: '';
 	position: absolute;
 	border: 5px solid;
 	border-color:  transparent  transparent transparent #eee;
 	top: 18px;
-	left: 125px;
+	left: 105px;
 	transition: 0.5s;
 }
-// .menu__list:hover::after{
-// 	transform: rotate(90deg)
-// }
 
-.menu__list:hover::after{
+.menu__top-item--list:hover::after{
     transform: rotate(90deg);
     border-color:  transparent  transparent transparent $main-color;
 }
