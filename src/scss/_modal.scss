@@ -152,3 +152,21 @@
 .fancybox-button svg {
     color: $third-color;
 }
+.popup-btn {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 50px;
+    border: 1px solid $main-color;
+    padding: 0 10px;
+    outline-color:  $third-color; 
+    letter-spacing: 1px; 
+    background-color: $main-color;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+.popup-btn:hover {
+    background-color: $third-color;
+    color: #fff;
+}

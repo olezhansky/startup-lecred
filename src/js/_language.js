@@ -1,18 +1,3 @@
-// console.log("test");
-// const burger = document.querySelector(".header__burger");
-// const navBar = document.querySelector(".nav-bar");
-// const headerMenue = document.querySelectorAll(".header__link");
-// const dropdownBtn = document.querySelector(".dropdown-btn");
-// const dropdownList = document.querySelector(".dropdown__list");
-// // const dropdownInput = document.querySelector(".dropdown_input");
-
-// const allLang = ["en", "ru", "ua"];
-// // location.href = window.location.pathname + "#en";
-
-// dropdownBtn.addEventListener("click", (event) => {
-//   event.stopPropagation();
-//   dropdownList.classList.toggle("show");
-// });
 const langArr = {
     menu: {
       en: "Main",
@@ -54,6 +39,42 @@ const langArr = {
         ru: "Информация",
         ua: "Інформація",
     },
+    menuDrop1: {
+        en: "Legislation of Ukraine",
+        ru: "Законодательство Украины",
+        ua: "Законодавство України",
+    },
+    menuDrop2: {
+        en: "Unified state register of court decisions",
+        ru: "Единый государственный реестр судебных решений",
+        ua: "Єдиний державний реєстр судових рішень",
+    },
+    menuDrop3: {
+        en: "Information on the stages of court proceedings",
+        ru: "Информация о стадий рассмотрения судебных дел",
+        ua: "Інформація щодо стадій розгляду судових справ",
+    },
+    menuDrop4: {
+        en: "State Register of Real Rights to Immovable Property",
+        ru: "Государственный реестр вещных прав на недвижимое имущество",
+        ua: "Державний реєстр речових прав на нерухоме майно",
+    },
+    menuDrop5: {
+        en: "Public cadastral map of Ukraine",
+        ru: "Публичная кадастровая карта Украины",
+        ua: "Публічна кадастрова карта України",
+    },
+    menuDrop6: {
+        en: "The only state portal of administrative services",
+        ru: "Единый государственный портал административных услуг",
+        ua: "Єдиний державний портал адміністративних послуг",
+    },
+    menuDrop7: {
+        en: "ProZorro database and public procurement analysis system",
+        ru: "База данных и система аналитики публичных закупок ProZorro",
+        ua: "База даних і система аналітики публічних закупівель ProZorro",
+    },
+
     
 
     sliderTitle1: {
@@ -399,8 +420,408 @@ const langArr = {
       ru: "Оставить заявку",
       ua: "Залишити заявку", 
     },
+
+    servicesTitle5: {
+      en: "Banking law",
+      ru: "Банковское право",
+      ua: "Банківське право",  
+    },
+    servicesBtn5: {
+      en: "More details",
+      ru: "Подробней",
+      ua: "Детальніше", 
+    },
+    servicesTitleItem5: {
+      en: "Banking law",
+      ru: "Банковское право",
+      ua: "Банківське право",  
+    },
+    servicesSubTitleItem5: {
+      en: "Representation of individuals in disputes with banks and financial institutions",
+      ru: "Представление физических лиц в спорах с банками и финансовыми организациями",
+      ua: "Подання фізичних осіб в суперечках з банками і фінансовими організаціями", 
+    },
+    servicesText1Item5: {
+      en: "legal support for the defense of debtors to banks and other financial organizations;",
+      ru: "юридическое сопровождение защиты должников перед банками и другими финансовыми организациями;",
+      ua: "юридичний супровід захисту боржників перед банками та іншими фінансовими організаціями;", 
+    },
+    servicesText2Item5: {
+      en: "collection of deposits;",
+      ru: "взыскание депозитной задолженности;",
+      ua: "стягнення депозитної заборгованості;", 
+    },
+    servicesText3Item5: {
+      en: "advising on risk assessment of bank agreements.",
+      ru: "консультирование по оценке рисков банковских договоров.",
+      ua: "консультування з оцінки ризиків банківських договорів.", 
+    },
+    servicesBtnItem5: {
+      en: "Leave a request",
+      ru: "Оставить заявку",
+      ua: "Залишити заявку", 
+    },
+
+    servicesTitle6: {
+      en: "Contract law",
+      ru: "Контрактное право",
+      ua: "Контрактне право",  
+    },
+    servicesBtn6: {
+      en: "More details",
+      ru: "Подробней",
+      ua: "Детальніше", 
+    },
+    servicesTitleItem6: {
+      en: "Contract law",
+      ru: "Контрактное право",
+      ua: "Контрактне право",  
+    },
+    servicesSubTitleItem6: {
+      en: "Reduction and elimination of risks associated with the contractual obligations of the Client",
+      ru: "Снижение и устранение рисков, связанных с договорными обязательствами Клиента",
+      ua: "Зниження і усунення ризиків, пов'язаних з договірними зобов'язаннями Клієнта", 
+    },
+    servicesText1Item6: {
+      en: "consulting and preparation of all types of contracts, including foreign economic contracts;",
+      ru: "консультирование и подготовка всех видов договоров, включая внешнеэкономические договора;",
+      ua: "консультування та підготовка всіх видів договорів, включаючи зовнішньоекономічні договори;", 
+    },
+    servicesText2Item6: {
+      en: "participation in negotiations with partners and / or counterparties of the client related to the conclusion, modification, implementation or termination of contracts;",
+      ru: "участие в переговорах с партнерами и/или контрагентами клиента, связанных с заключением, изменением, выполнением либо расторжением договоров;",
+      ua: "участь в переговорах з партнерами та / або контрагентами клієнта, пов'язаних з укладенням, зміною, виконанням або розірванням договорів;", 
+    },
+    servicesText3Item6: {
+      en: "legal examination of draft contracts offered to the client for signing;",
+      ru: "юридическая экспертиза проектов договоров, предлагаемых клиенту для подписания;",
+      ua: "юридична експертиза проектів договорів, запропонованих клієнту для підписання;", 
+    },
+    servicesText4Item6: {
+      en: "advising on the optimization of taxation and customs duties in the implementation of transactions;",
+      ru: "консультирование относительно оптимизации налогообложения и таможенных сборов при осуществлении сделок;",
+      ua: "консультування щодо оптимізації оподаткування та митних зборів при здійсненні операцій;", 
+    },
+    servicesText5Item6: {
+      en: "individual development of special contractual structures not provided for by the current legislation of Ukraine;",
+      ru: "индивидуальная разработка специальных договорных конструкций, не предусмотренных действующим законодательством Украины;",
+      ua: "індивідуальна розробка спеціальних договірних конструкцій, не передбачених чинним законодавством України;", 
+    },
+    servicesText6Item6: {
+      en: "consulting and legal support of procedures for obtaining licenses, patents, permits, certificates and other documents necessary for the implementation of contractual activities;",
+      ru: "консультирование и юридическое сопровождение процедур получения лицензий, патентов, разрешений, свидетельств и иных документов, необходимых для осуществления договорной деятельности;",
+      ua: "консультування та юридичний супровід процедур отримання ліцензій, патентів, дозволів, свідоцтв та інших документів, необхідних для здійснення договірної діяльності;", 
+    },
+    servicesText7Item6: {
+      en: "drafting arbitration clauses, effective ways to secure obligations, as well as other legal mechanisms to protect the client's interests in contractual relations;",
+      ru: "составление арбитражных оговорок, эффективных способов обеспечения обязательств, а также иных юридических механизмов защиты интересов клиента в договорных отношениях;",
+      ua: "складання арбітражних застережень, ефективних способів забезпечення зобов'язань, а також інших юридичних механізмів захисту інтересів клієнта в договірних відносинах;", 
+    },
+    servicesText8Item6: {
+      en: "comprehensive support of foreign economic activity;",
+      ru: "комплексное сопровождение внешнеэкономической деятельности;",
+      ua: "комплексний супровід зовнішньоекономічної діяльності;", 
+    },
+    servicesText9Item6: {
+      en: "preparation, legal certificates, opinions;",
+      ru: "подготовка, юридических справок, заключений;",
+      ua: "підготовка, юридичних довідок, висновків;", 
+    },
+    servicesText10Item6: {
+      en: "representation of the client's interests in the event of disputes with counterparties, state authorities and local governments, both on the territory of Ukraine and abroad.",
+      ru: "представительство интересов клиента в случае возникновения споров с контрагентами, органами государственной власти и местного самоуправления, как на территории Украины, так и за ее пределами.",
+      ua: "представництво інтересів клієнта в разі виникнення суперечок з контрагентами, органами державної влади та місцевого самоврядування, як на території України, так і за її межами.", 
+    },
+    servicesBtnItem6: {
+      en: "Leave a request",
+      ru: "Оставить заявку",
+      ua: "Залишити заявку", 
+    },
+
+    servicesTitle7: {
+      en: "Family law",
+      ru: "Семейное право",
+      ua: "Сімейне право",  
+    },
+    servicesBtn7: {
+      en: "More details",
+      ru: "Подробней",
+      ua: "Детальніше", 
+    },
+    servicesTitleItem7: {
+      en: "Family law",
+      ru: "Семейное право",
+      ua: "Сімейне право",    
+    },
+    servicesSubTitleItem7: {
+      en: "Representation of interests in all major issues related to family law",
+      ru: "Представление интересов во всех основных вопросах, связанных с семейным законодательством",
+      ua: "Представлення інтересів у всіх основних питаннях, пов'язаних із сімейним законодавством", 
+    },
+    servicesText1Item7: {
+      en: "invalidation of marriage",
+      ru: "признание брака недействительным;",
+      ua: "визнання шлюбу недійсним;", 
+    },
+    servicesText2Item7: {
+      en: "dissolution of marriage;",
+      ru: "расторжение брака;",
+      ua: "розірвання шлюбу;", 
+    },
+    servicesText3Item7: {
+      en: "determination of the child's place of residence;",
+      ru: "определение места жительства ребенка;",
+      ua: "визначення місця проживання дитини;", 
+    },
+    servicesText4Item7: {
+      en: "deprivation of parental rights;",
+      ru: "лишение родительских прав;;",
+      ua: "позбавлення батьківських прав;", 
+    },
+    servicesText5Item7: {
+      en: "collection of alimony;",
+      ru: "взыскание алиментов;",
+      ua: "стягнення аліментів;", 
+    },
+    servicesText6Item7: {
+      en: "drawing up a marriage contract (contract).",
+      ru: "cоставление брачного договора (контракта).",
+      ua: "складання шлюбного договору (контракту).", 
+    },
+    servicesBtnItem7: {
+      en: "Leave a request",
+      ru: "Оставить заявку",
+      ua: "Залишити заявку", 
+    },
+
+    servicesTitle8: {
+      en: "Subscriber service",
+      ru: "Абонентское обслуживание",
+      ua: "Абонентське обслуговування",  
+    },
+    servicesBtn8: {
+      en: "More details",
+      ru: "Подробней",
+      ua: "Детальніше", 
+    },
+    servicesTitleItem8: {
+      en: "Subscriber service",
+      ru: "Абонентское обслуживание",
+      ua: "Абонентське обслуговування",    
+    },
+    servicesSubTitleItem8: {
+      en: "Continuous work on major legal issues with the Client",
+      ru: "Постоянная работа по основным юридическим вопросам с Клиентом",
+      ua: "Постійна робота по основним юридичних питань з Клієнтом", 
+    },
+    servicesText1Item8: {
+      en: "preparation of draft internal documents;",
+      ru: "подготовка проектов внутренних документов;",
+      ua: "підготовка проектів внутрішніх документів;", 
+    },
+    servicesText2Item8: {
+      en: "legal modeling of business processes;",
+      ru: "юридическое моделирование бизнес-процессов;",
+      ua: "юридичне моделювання бізнес-процесів;", 
+    },
+    servicesText3Item8: {
+      en: "development of concepts for contractual support of current business processes;",
+      ru: "разработка концепций договорного сопровождения текущих бизнес-процессов;",
+      ua: "розробка концепцій колективні трудові договори поточних бізнес-процесів;", 
+    },
+    servicesText4Item8: {
+      en: "legal examination of economic and civil and legal contracts;",
+      ru: "юридическая экспертиза хозяйственно-правовых и гражданско-правовых договоров;",
+      ua: "юридична експертиза господарсько-правових і цивільно-правових договорів;", 
+    },
+    servicesText5Item8: {
+      en: "preparation of claims and responses to claims on contractual legal relationships;",
+      ru: "подготовка претензий и ответов на претензии по договорным правоотношениям;",
+      ua: "підготовка претензій і відповідей на претензії за договірними правовідносин;", 
+    },
+    servicesText6Item8: {
+      en: "legal support for the application of measures to ensure the fulfillment of obligations;",
+      ru: "юридическое сопровождение применения мер обеспечения выполнения обязательств;",
+      ua: "юридичний супровід застосування заходів забезпечення виконання зобов'язань;", 
+    },
+    servicesText7Item8: {
+      en: "legal support for changes and termination of contractual relations;",
+      ru: "юридическое сопровождение изменения и прекращения договорных отношений;",
+      ua: "юридичний супровід зміни і припинення договірних відносин;", 
+    },
+    servicesText8Item8: {
+      en: "audit of contractual and legal processes and documents;",
+      ru: "аудит договорно-правовых процессов и документов;",
+      ua: "аудит договірно-правових процесів і документів;", 
+    },
+    servicesText9Item8: {
+      en: "analysis of planned business projects for compliance with legal requirements;",
+      ru: "анализ запланированных бизнес-проектов на соответствие требованиям законодательства;",
+      ua: "аналіз запланованих бізнес-проектів на відповідність вимогам законодавства;", 
+    },
+    servicesText10Item8: {
+      en: "providing recommendations for optimization and adjustment of business projects;",
+      ru: "предоставление рекомендаций по оптимизации и корректировке бизнес-проектов;",
+      ua: "надання рекомендацій по оптимізації і коригуванню бізнес-проектів;", 
+    },
+    servicesText11Item8: {
+      en: "legal support for the implementation of business projects;",
+      ru: "юридическое сопровождение реализации бизнес-проектов;",
+      ua: "юридичний супровід реалізації бізнес-проектів;", 
+    },
+    servicesText12Item8: {
+      en: "preparation of documents for representation (powers of attorney, instructions, etc.).",
+      ru: "подготовка документов на представительство (доверенностей, поручений и т.п.).",
+      ua: "підготовка документів на представництво (довіреностей, доручень і т.п.).", 
+    },
+    servicesBtnItem8: {
+      en: "Leave a request",
+      ru: "Оставить заявку",
+      ua: "Залишити заявку", 
+    },
+
+    whyTitle: {
+      en: "Why Choose Us?",
+      ru: "Почему выбирают нас ?",
+      ua: "Чому обирають нас?", 
+    },
+    whyItemTitle1: {
+      en: "Professionalism",
+      ru: "Профессионализм",
+      ua: "Професіоналізм", 
+    },
+    whyItemText1: {
+      en: "Over the past 2 years, the group's lawyers have won more than 200 court proceedings and implemented more than 350 projects in various industries.",
+      ru: "Юристы группы за последние 2 года выиграли более 200 судебных производств и реализовали более 350 проектов в различных отраслях.",
+      ua: "Юристи групи за останні 2 роки виграли понад 200 судових виробництв і реалізували понад 350 проектів в різних галузях.",  
+    },
+    whyItemTitle2: {
+      en: "Equalized prices",
+      ru: "Уравновешенные цены",
+      ua: "Врівноважені ціни", 
+    },
+    whyItemText2: {
+      en: "You will gain the experience of a group of lawyers for a price below the average lawyer salary.",
+      ru: "Вы получите опыт группы юристов за цену ниже средней заработной платы юриста.",
+      ua: "Ви отримаєте досвід групи юристів за ціну нижче середньої заробітної плати юриста.",  
+    },
+    whyItemTitle3: {
+      en: "Availability",
+      ru: "Доступность",
+      ua: "Доступність", 
+    },
+    whyItemText3: {
+      en: "We work not 8 hours a day, but for the result. LECRED specialists are always available when you have a question, because we understand that the business has no days off.",
+      ru: "Работаем не 8 часов в день, а на результат. Специалисты ЮК LECRED в доступе всегда, когда Вы вопрос, поскольку понимаем, что у бизнеса выходных нет.",
+      ua: "Працюємо не 8 годин на день, а на результат. Фахівці ЮК LECRED в доступі завжди, коли Ви питання, оскільки розуміємо, що у бізнесу вихідних немає.",  
+    },
+    whyItemTitle4: {
+      en: "Objective assessment of the situation",
+      ru: "Объективная оценка ситуации",
+      ua: "Об'єктивна оцінка ситуації", 
+    },
+    whyItemText4: {
+      en: "You get an objective assessment of your affairs and options for improving the situation. Our lawyers do not hush up the client's problems to the critical point, but on the contrary purposefully look for real options for solving cases.",
+      ru: "Вы получаете объективную оценку Ваших дел и варианты улучшения ситуации. Наши юристы не замалчивают проблемы клиента до критической точки, а наоборот целенаправленно ищут реальные варианты решения кейсов.",
+      ua: "Ви отримуєте об'єктивну оцінку Ваших справ і варіанти поліпшення ситуації. Наші юристи не замовчують проблеми клієнта до критичної точки, а навпаки цілеспрямовано шукають реальні варіанти вирішення кейсів.",  
+    },
+
+    contacts: {
+      en: "Contacts",
+      ru: "Контакты",
+      ua: "Контакти", 
+    },
+    addressTitle: {
+      en: "Address",
+      ru: "Адрес",
+      ua: "Адреса", 
+    },
+    address: {
+      en: "Kyiv",
+      ru: "Киев",
+      ua: "Київ", 
+    },
+    phone: {
+      en: "Phone",
+      ru: "Телефон",
+      ua: "Телефон", 
+    },
+    email: {
+      en: "Email",
+      ru: "Эл. адрес",
+      ua: "Ел. адрес", 
+    },
+    networks: {
+      en: "We are in social networks",
+      ru: "Мы в соцсетях",
+      ua: "Ми в соціальних мережах", 
+    },
+
+    formTitle: {
+      en: "Get a consultation",
+      ru: "Получить консультацию",
+      ua: "Отримати консультацію", 
+    },
+    formText: {
+      en: "Free analysis of your specific problem and a description of all the risks provides you with the opportunity to objectively assess the need for cooperation.",
+      ru: "Бесплатный анализ конкретной Вашей проблемы и описание всех рисков, обеспечивает Вам возможность объективно оценить необходимость сотрудничества.",
+      ua: "Безкоштовний аналіз конкретної Вашої проблеми і опис всіх ризиків, забезпечує Вам можливість об'єктивно оцінити необхідність співпраці.", 
+    },
+
+    labelEmail: {
+      en: "E-mail",
+      ru: "Эл. почта",
+      ua: "Эл. пошта", 
+    },
+
+    labelPhone: {
+      en: "Phone",
+      ru: "Телефон",
+      ua: "Телефон", 
+    },
+    labelName: {
+      en: "Full name",
+      ru: "Сообщение",
+      ua: "ПІБ", 
+    },
+    labelMessage: {
+      en: "Message",
+      ru: "ФИО",
+      ua: "Повідомлення", 
+    },
+    formBtn: {
+      en: "Leave a request",
+      ru: "Оставить заявку",
+      ua: "Залишити заявку", 
+    },
+    footer: {
+      en: "© Law Firm «Lecred», 2020-2021. All rights reserved",
+      ru: "© ЮК «Lecred», 2020-2021. Все права защищены",
+      ua: "© ЮК «Lecred», 2020-2021. Всі права захищені", 
+    },
+    popupName: {
+      en: "Full name",
+      ru: "ФИО",
+      ua: "ПІБ", 
+    },
+    popupPhone: {
+      en: "Your phone",
+      ru: "Ваш телефон",
+      ua: "Ваш телефон", 
+    },
+    popupDescription: {
+      en: "Describe your problem",
+      ru: "Опишите Вашу проблему",
+      ua: "Опишіть Вашу проблему", 
+    },
+    popupBtn: {
+      en: "Send",
+      ru: "Отправить",
+      ua: "Відправити", 
+    },
+    
+    
   };
-  ;
   console.log("test");
   const burger = document.querySelector(".header__burger");
   const navBar = document.querySelector(".nav-bar");
