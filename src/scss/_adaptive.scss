@@ -31,7 +31,6 @@
 			width: 30px;
 			height: 20px;
 			position: absolute;
-			// left: 92%;
 			right: 25px;
 			top: 0px;
 			z-index: 60;
@@ -109,7 +108,7 @@
 		width: 0px;
 	}
 	.title {
-  		font-size: 28px;
+  		font-size: 24px;
     	line-height: 30px;
 	}
 	.contact__item {
@@ -172,8 +171,8 @@
 
 @media(max-width: 600px) {
 	.slider {
-		padding: 10px 0 30px;
-		min-height: 300px;
+		padding: 50px 0 30px;
+		min-height: 500px;
 	}
 	.slider__title h2 {
 		font-size: 32px;
@@ -244,6 +243,19 @@
 		justify-items: center;
 	}
 }
+
+// Services 
+@media(max-width: 600px) {
+	.services__item {
+		display: flex;
+		flex-direction: column;
+		width: 90%;
+		&-btn {
+			margin-top: 10px;
+		}
+	}
+}
+
 
 // Why
 @media(max-width: 700px) {
@@ -329,25 +341,14 @@
 	#modal__services-6,
 	#modal__services-7,
 	#modal__services-8 {
-	  width: 80%;
+	  width: 100%;
+	  height: 100%;
 	} 
 }
 
 @media(max-width: 480px) {
 	.fancybox-content {
 		padding: 25px;
-
-	}
-	#modal__services-1,
-	#modal__services-2,
-	#modal__services-3,
-	#modal__services-4,
-	#modal__services-5,
-	#modal__services-6,
-	#modal__services-7,
-	#modal__services-8 {
-	  width: 90%;
-	  height: 80%;
 	}
 	#modal__services-1 h2,
 	#modal__services-2 h2,
