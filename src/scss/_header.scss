@@ -200,11 +200,6 @@
 .menu__top {
     line-height: 50px;
 }
-// .menu .menu__top--active {
-//     opacity: 1;
-//     visibility: visible;
-//     transform: translateX(0px);
-// }
 .menu__top-item {
     display: inline-block;
     padding-right: 30px;
@@ -263,7 +258,7 @@
     position: relative;
 }
 .menu__drop {
-    width: 470px;
+    width: 500px;
     position: absolute;
     z-index: 500;
     text-align: left;
@@ -288,10 +283,12 @@
     border-bottom: none;
 }
 .menu__drop-link {
+    display: block;
     color: $main-color;
     font-weight: 700;
     font-size: 14px;
     line-height: 14px;
+    padding: 20px 0px;
 }
 .menu__top-item--list:hover .menu__drop {
     transition: transform .5s ease-in;
