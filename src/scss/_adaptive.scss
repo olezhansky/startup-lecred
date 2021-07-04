@@ -13,6 +13,10 @@
 		&__email {
 			margin-left: 0;
 		}
+		&__phone-menu:hover .header__phone-top,
+		&__phone-menu:hover .header__phone-bottom {
+			display: none;
+		}
 	}
     
 }
@@ -63,16 +67,12 @@
 	}
     
 	.menu__top {
-		// opacity: 0;
-		// visibility: hidden;
 		position: absolute;
 		display: none;
 		left: 0;
 		right: 0;
 		top: 37px;
-		// transform: translateX(-500px);
 		z-index: 50;
-		// transition: .5s;
 	}
 	.menu__top-item {
 		display: block;
@@ -87,6 +87,9 @@
 		padding: 5px 0;
 		color: red;
 		
+	}
+	.menu__top-item--list {
+		display: none;
 	}
 	.menu__top-link {
 		background: linear-gradient(to right, $third-color, $third-color 50%, #fff 50%);
@@ -185,10 +188,12 @@
 	.slider__btn {
 		margin-top: 15px;
 	}
-    
+    .slider__title h2 {
+		font-size: 22px;
+		line-height: 42px;
+		min-height: 150px;
+	}
 }
-
-
 
 // About 
 @media(max-width: 600px) {

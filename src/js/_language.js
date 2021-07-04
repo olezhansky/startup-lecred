@@ -163,19 +163,19 @@ const langArr = {
       ua: "Основні принципи роботи", 
     },
     principlesText1: {
-      en: "The goal is to provide quality legal support to the Client.",
-      ru: "Цель - обеспечение качествой юридической поддержки Клиента.",
-      ua: "Мета - забезпечення якості юридичної підтримки Клієнта.", 
+      en: "The goal is to provide quality legal support to the Client",
+      ru: "Цель - обеспечение качествой юридической поддержки Клиента",
+      ua: "Мета - забезпечення якості юридичної підтримки Клієнта", 
     },
     principlesText2: {
-      en: "No guarantees until a complete study and analysis of your problem.",
-      ru: "Никаких гарантий до момента полного изучения и анализа Вашей проблемы.",
-      ua: "Ніяких гарантій до моменту повного вивчення та аналізу Вашої проблеми.", 
+      en: "No guarantees until a complete study and analysis of your problem",
+      ru: "Никаких гарантий до момента полного изучения и анализа Вашей проблемы",
+      ua: "Ніяких гарантій до моменту повного вивчення та аналізу Вашої проблеми", 
     },
     principlesText3: {
-      en: "Free analysis and description of all risks, provides you with the opportunity to objectively assess the need for cooperation.",
-      ru: "Бесплатный анализ и описание всех рисков, обеспечивает Вам возможность объективно оценить необходимость сотрудничества.",
-      ua: "Безкоштовний аналіз і опис всіх ризиків, забезпечує Вам можливість об'єктивно оцінити необхідність співпраці.", 
+      en: "Free analysis and description of all risks, provides you with the opportunity to objectively assess the need for cooperation",
+      ru: "Бесплатный анализ и описание всех рисков, обеспечивает Вам возможность объективно оценить необходимость сотрудничества",
+      ua: "Безкоштовний аналіз і опис всіх ризиків, забезпечує Вам можливість об'єктивно оцінити необхідність співпраці", 
     },
     servicesMainTitle: {
       en: "Scope of our services",
@@ -884,5 +884,3 @@ const langArr = {
     }
   }
   changeLanguage();
-  ;
-  console.log('Hello');;
