@@ -3,7 +3,7 @@
     background-image: linear-gradient(
       90deg,
       rgba(0, 0, 0, 0.7) 0%,
-      rgba(0, 0, 0, 0.1) 100%
+      rgba(0, 0, 0, 0.6) 100%
     ),
     url(../img/about-bg.jpg);
     background-color: #fff;
@@ -19,7 +19,8 @@
         margin: 0 auto;
     }
     &__title {
-        color: #00002c;
+        // color: #00002c;
+        color: #fff;
     }
     &__text {
         font-size: 22px;

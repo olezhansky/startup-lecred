@@ -18,6 +18,7 @@ html {
 
 body {
     font-family: $primary-font;
+    // font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 18px;
@@ -63,7 +64,8 @@ li {
         left: 44%;
         width: 120px;
         height: 3px;
-        background-color: #4973ff;
+        background-color: #fff;
+        // background-color: #4973ff;
     }
     &::before {
         content: '';
@@ -72,7 +74,8 @@ li {
         left: 46%;
         width: 120px;
         height: 3px;
-        background-color: #4973ff;
+        background-color: #fff;
+        // background-color: #4973ff;
     }
 }
 

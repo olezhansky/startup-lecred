@@ -135,7 +135,7 @@ const langArr = {
     aboutP3: {
       en: "-has lost hope to return the borrowed money;",
       ru: "-потерял надежду вернуть одолженные деньги;",
-      ua: "-втратив надію повернути позичені гроші;;", 
+      ua: "-втратив надію повернути позичені гроші;", 
     },
     aboutP4: {
       en: "-does not know how to legally deal with the inspection authorities or appeal against their actions;",
@@ -830,7 +830,7 @@ const langArr = {
   const dropdownList = document.querySelector(".dropdown__list");
   // const dropdownInput = document.querySelector(".dropdown_input");
   
-  const allLang = ["ru", "ua", "en"];
+  const allLang = ["ru", "ua"];
   // location.href = window.location.pathname + "#en";
   
   dropdownBtn.addEventListener("click", (event) => {

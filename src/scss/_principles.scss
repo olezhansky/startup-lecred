@@ -1,5 +1,11 @@
 .principles {
-    background-image: url(../img/principles-bg.jpg);
+    // background-image: url(../img/principles-bg.jpg);
+    background-image: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.7) 0%,
+        rgba(0, 0, 0, 0.6) 100%
+      ),
+      url(../img/principles-bg.jpg);
     min-height: 300px;
     background-repeat: no-repeat;
     background-size: cover;

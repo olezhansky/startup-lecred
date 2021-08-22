@@ -1,10 +1,17 @@
 .services {
-    background-color: #808080;
+    // background-color: #808080;
+    // background-color: #808080;
+    background-image: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.7) 0%,
+        rgba(0, 0, 0, 0.7) 100%
+      );
     &__inner {
         padding: 30px 0;
     }
     &__title {
         color: $main-color;
+        color: #fff;
     }
     &__items {
         margin-top: 25px;
@@ -43,7 +50,7 @@
         color: $main-color;
         background-color: #fff;
         font-size: 16px;
-        font-weight: 500;
+        font-weight: 700;
         letter-spacing: 1px;
         padding: 7px 10px;
         line-height: 24px;
@@ -52,12 +59,16 @@
         transition: all .3s;
         margin-bottom: 5px;
     }
-    &__item-btn a:hover {
-        background-color: rgba(73, 115, 255, 1);;
-        box-shadow: 2px 2px 0px 0px rgba(73, 115, 255, 1);
-        color: #fff;
-    }
-    &__item-btn a:active {
+    // &__item-btn a:hover {
+    //     background-color: rgba(73, 115, 255, 1);;
+    //     box-shadow: 2px 2px 0px 0px rgba(73, 115, 255, 1);
+    //     color: #fff;
+    // }
+    // &__item-btn a:active {
+    //     transform: translate(3px, 3px);
+    //     box-shadow: none;
+    // }
+    &__item-btn a:hover  {
         transform: translate(3px, 3px);
         box-shadow: none;
     }

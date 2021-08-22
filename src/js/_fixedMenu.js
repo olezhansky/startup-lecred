@@ -7,7 +7,7 @@
                 if (window.pageYOffset > 80) {
                     headerMenuEl.style.position = 'fixed'
                     headerMenuEl.style.top = '0'
-                    headerMenuEl.style.backgroundColor = THIRD_COLOR
+                    // headerMenuEl.style.backgroundColor = FOURTH_COLOR
                 } else {
                     headerMenuEl.style.position = 'absolute'
                     headerMenuEl.style.top = '80px'
@@ -17,7 +17,7 @@
                 if (window.pageYOffset > 174) {
                     headerMenuEl.style.position = 'fixed'
                     headerMenuEl.style.top = '0'
-                    headerMenuEl.style.backgroundColor = THIRD_COLOR
+                    // headerMenuEl.style.backgroundColor = FOURTH_COLOR
                 } else {
                     headerMenuEl.style.position = 'absolute'
                     headerMenuEl.style.top = '174px'
@@ -27,7 +27,7 @@
                 if (window.pageYOffset > 200) {
                     headerMenuEl.style.position = 'fixed'
                     headerMenuEl.style.top = '0'
-                    headerMenuEl.style.backgroundColor = THIRD_COLOR
+                    // headerMenuEl.style.backgroundColor = FOURTH_COLOR
                 } else {
                     headerMenuEl.style.position = 'absolute'
                     headerMenuEl.style.top = '200px'
