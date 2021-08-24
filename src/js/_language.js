@@ -781,12 +781,22 @@ const langArr = {
     },
     labelName: {
       en: "Full name",
-      ru: "Сообщение",
+      ru: "ФИО",
       ua: "ПІБ", 
     },
     labelMessage: {
       en: "Message",
-      ru: "ФИО",
+      ru: "Сообщение",
+      ua: "Повідомлення", 
+    },
+    formPlaceholder1: {
+      en: "Name",
+      ru: "Имя",
+      ua: "Ім'я", 
+    },
+    formPlaceholder2: {
+      en: "Message",
+      ru: "Сообщение",
       ua: "Повідомлення", 
     },
     formBtn: {
@@ -876,10 +886,19 @@ const langArr = {
     console.log(langArr["menu"][hash]);
   
     dropdownBtn.textContent = hash.toUpperCase();
+    // for (let key in langArr) {
+    //   let element = document.querySelector(".lng-" + key);
+    //   if (element && langArr[key][hash]) {
+    //     element.textContent = langArr[key][hash];
+    //   }
+    // }
     for (let key in langArr) {
       let element = document.querySelector(".lng-" + key);
       if (element && langArr[key][hash]) {
-        element.textContent = langArr[key][hash];
+        if (element.nodeName !== 'TEXTAREA') {
+          element.textContent = langArr[key][hash];
+        }
+        element.setAttribute('placeholder', langArr[key][hash]);
       }
     }
   }
